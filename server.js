@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const bodyParser = require('body-parser');
 const port = process.env.PORT || 5080;
 // custom modules
 const channels = require('./routes/api/channels');
@@ -14,6 +15,11 @@ mongoose.connect(db, {
     console.log('Database is connected');
 })
 .catch(err=>console.log(err));
+
+
+// body parser middleware
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
 
 
 // use routes
