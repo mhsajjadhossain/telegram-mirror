@@ -7,6 +7,8 @@ const Pafx = require('../../models/Pafx')
 const Paicc = require('../../models/Paicc')
 const Scalp = require('../../models/Scalp')
 const Algo = require('../../models/Algo')
+const Test = require('../../models/TestDB')
+// const TestDB = require('../../models/TestDB')
 
 // @route GET api/get
 // @desc Test channel route
@@ -108,5 +110,32 @@ router.post('/algo',(req,res)=>{
         .then(algo => res.json(algo))
         .catch(err=>console.log(err))
 })
+
+// router.post('/test',(req,res)=>{
+//     let dataset = {
+//         profileinfo:{
+//             chat_id:req.body.chat_id,
+//             subCount:req.body.subCount,
+//             avatar:req.body.avatar
+//         },
+//         chatinfo:[{
+//             raw_text: req.body.raw_text,
+//             chat_id: req.body.chat_id,
+//             id:req.body.id,
+//             is_reply: req.body.is_reply,
+//             date: req.body.date,
+//             to_id: req.body.to_id,
+//             to_message_id:req.body.to_message_id
+//             }
+//         ]
+//     }
+
+//         const test = new Test(dataset);
+//         test.save()
+//         .then(test => res.json(test))
+//         .catch(err=>console.log(err))
+
+ 
+// })
 
 module.exports = router;

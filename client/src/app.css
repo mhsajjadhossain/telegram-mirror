@@ -1,0 +1,113 @@
+.App {
+  background: #e7ebf0;
+  height: 100vh;
+}
+.containerWrap {
+  width: 1011px;
+  margin: 0 auto;
+  background: rgba(241, 241, 241, 0.767);
+}
+.mainHeader {
+  height: 48px;
+  background: #5682a3;
+  display: flex;
+  align-items: center;
+}
+.headerLeft {
+  width: 31.1573%;
+  text-align: center;
+}
+.headerLeft p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.headerRight {
+  width: 68.8427%;
+  padding-left: 22px;
+}
+.headerInfo {
+  font-size: 15px;
+  color: #fff;
+}
+.subCount {
+  font-size: 10px;
+  margin-left: 10px;
+  color: #eee;
+}
+.containerWrap {
+  width: 1011px;
+  margin: 0 auto;
+  background: #fff;
+}
+.leftSidebar {
+  width: 31.1573%;
+  padding: 20px 0px;
+  border-right: 2px solid #e9ebed;
+  height: calc(100vh - 73px);
+  overflow-y: auto;
+}
+.singleProfileWrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px 15px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+.singleProfileWrap.active,
+.singleProfileWrap:hover {
+  background: #3c92d3;
+}
+.profileAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileAvatar img {
+  width: 100%;
+}
+.profileInfo {
+  width: 222px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.msgInfo {
+  width: 40px;
+}
+.profileTxt h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+.profileTxt p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #919191;
+}
+.msgInfo .time {
+  color: #b4b4b4;
+  font-size: 10px;
+}
+.profileTxt h5,
+.profileTxt p,
+.msgInfo .time {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+.singleProfileWrap.active .profileTxt h5,
+.singleProfileWrap.active .profileTxt p,
+.singleProfileWrap.active .msgInfo .time,
+.singleProfileWrap:hover .profileTxt h5,
+.singleProfileWrap:hover .profileTxt p,
+.singleProfileWrap:hover .msgInfo .time {
+  color: #fff;
+}
