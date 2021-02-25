@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 import Header from './components/Header';
 import Leftsidebar from './components/Leftsidebar';
+import Rightsidebar from './components/Rightsidebar';
 import './index.css';
 
 class App extends Component {
@@ -51,7 +52,8 @@ class App extends Component {
         <div className="containerWrap">
             <Header name="PriceAction LTD." cName="PriceAction Forex" subCount="200"/>
             <div className="appR">
-              <Leftsidebar/>  
+              <Leftsidebar/>
+              <Rightsidebar/>
             </div>
         </div>
     </div>

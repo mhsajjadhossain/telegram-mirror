@@ -13,4 +13,4 @@
 
 var event = new Date('August 19, 1975 23:15:30 GMT+00:00');
 
-console.log(event.toLocaleTimeString('en-US').replace(/:\d\d /, ' '));
+console.log(event.toLocaleString('en-US').replace(/:\d\d /, ' '));
